@@ -19,6 +19,7 @@ namespace WebApplicationBasic
 
             var host = new WebHostBuilder()
                 .UseConfiguration(config)
+                .UseUrls("http://*:5000")
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
